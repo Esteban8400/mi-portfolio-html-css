@@ -221,3 +221,17 @@ footer {
   text-align: center;
   padding: 1.5rem;
 }
+/* Adapta el diseño a pantallas pequeñas (mobile y tablet) */
+@media (max-width: 768px) {
+  .fila {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    text-align: center;
+  }
+
+  .habilidades {
+    width: 100%;
+  }
