@@ -223,6 +223,7 @@ footer {
 }
 /* Adapta el diseño a pantallas pequeñas (mobile y tablet) */
 @media (max-width: 768px) {
+  /* Enfocar la fila de contenido en una columna */
   .fila {
     flex-direction: column;
     align-items: center;
@@ -230,8 +231,34 @@ footer {
 
   .titulo {
     text-align: center;
+    width: 100%;
   }
 
   .habilidades {
     width: 100%;
   }
+
+  /* Ajuste para el contenedor de proyectos:
+     Cambia la dirección de los elementos a columna para que se apilen verticalmente */
+  .proyectos-contenedor {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  /* Ajuste para el formulario de contacto:
+     Cambia el layout a columna para que los campos se dispongan verticalmente */
+  #contacto form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  /* Asegura que los elementos del formulario ocupen todo el ancho */
+  #contacto form label,
+  #contacto form input,
+  #contacto form textarea,
+  #contacto form button {
+    width: 100%;
+  }
+}
