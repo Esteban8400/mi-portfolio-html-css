@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Define la codificación de caracteres -->
+    <meta charset="UTF-8">
+    <!-- Establece el diseño responsivo en dispositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título del sitio web mostrado en la pestaña del navegador -->
+    <title>Mi Portafolio Personal</title>
+
+    <!-- Vincula el archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Importa la fuente "Roboto" desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado principal: muestra el título del sitio web -->
+    <header>
+        <h1>Mi Sitio Web</h1>
+    </header>
+
+    <!-- Barra de navegación: contiene enlaces a las secciones principales -->
+    <nav>
+        <ul>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#tarjetas">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenido principal del sitio -->
+    <main>
+
+        <!-- Sección "Sobre mí": incluye descripción e imagen -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>Soy un <strong>estudiante rosarino</strong> y futuro desarrollador, apasionado por la <em>tecnología</em> y mi amado <strong>Rosario Central</strong>.</p>
+            <p>Me encanta aprender, resolver problemas y encontrar soluciones innovadoras.</p>
+
+            <!-- Imagen de presentación personal -->
+            <img src="img/FotoPresentacion.avif" alt="Foto de mi presentación">
+        </section>
+
+        <!-- Sección "Habilidades": muestra una lista de habilidades técnicas -->
+        <section id="habilidades">
+            <div class="fila">
+                <h2 class="titulo">Habilidades</h2>
+                <ul class="habilidades">
+                    <li><strong>JavaScript:</strong> Manejo del lenguaje para desarrollo web interactivo y dinámico.</li>
+                    <li><strong>HTML/CSS:</strong> Creación de estructuras web semánticas y diseño responsivo.</li>
+                    <li><strong>C# y Java:</strong> Conocimiento en lenguajes de programación orientados a objetos.</li>
+                    <li><strong>SQL:</strong> Gestión de bases de datos, consultas y optimización de información.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección "Proyectos": contiene dos proyectos con texto e imágenes -->
+        <section id="tarjetas">
+            <div class="fila">
+                <h2 class="titulo">Proyectos</h2>
+                <div class="proyectos-contenedor">
+                    <!-- Proyecto Tienda Online -->
+                    <section id="tienda-online">
+                        <h3>Mi Tienda Online</h3>
+                        <p>Pagina web de una tienda virtual en la que los clientes pueden explorar catálogos digitales, comparar precios, ver las descripciones del producto y agregarlo a un carrito de compras. Además, suele incluir opciones de pago seguras y métodos de envío para facilitar la entrega de los productos.</p>
+                        <img src="img/tienda-virtual.jpg" alt="Representación de una tienda virtual">
+                    </section>
+
+                    <!-- Proyecto Club El Torito -->
+                    <section id="programa-csharp">
+                        <h3>Gestión de Base de Datos - Club El Torito</h3>
+                        <p>Programa en C# para gestionar socios, eventos y pagos dentro del club.</p>
+                        <ul>
+                            <li>Registro de socios con información completa.</li>
+                            <li>Gestión de pagos y cuotas.</li>
+                            <li>Generación de reportes para eventos.</li>
+                        </ul>
+                        <img src="img/torito-programa.jpg" alt="Captura del programa de C#">
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de contacto: permite enviar información vía correo electrónico -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Sección "Películas favoritas": muestra tarjetas con información sobre tres películas -->
+        <section id="peliculas">
+            <h2>Mis Películas Favoritas</h2>
+            <div class="contenedor-peliculas">
+
+                <!-- Tarjeta Stargate -->
+                <div class="pelicula">
+                    <h3>Stargate</h3>
+                    <img src="img/stargate.jpg" alt="Portada de Stargate">
+                    <p>Una aventura épica que conecta civilizaciones a través de un portal interdimensional, utiliza misterios como la construcción de las pirámides para dejar volar la imaginación.</p>
+                </div>
+
+                <!-- Tarjeta Star Trek -->
+                <div class="pelicula">
+                    <h3>Star Trek</h3>
+                    <img src="img/startrek.jpg" alt="Portada de Star Trek">
+                    <p>Una saga futurista perfecta para imaginar sobre cómo sería la vida más allá de las estrellas.</p>
+                </div>
+
+                <!-- Tarjeta Star Wars -->
+                <div class="pelicula">
+                    <h3>Star Wars</h3>
+                    <img src="img/guerra.avif" alt="Portada de La Guerra de las Galaxias">
+                    <p>Una obra maestra para todos los amantes de la ciencia ficción.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página: información de copyright y enlaces a redes sociales -->
+    <footer>
+        <p>© 2025 Esteban Dido. Sígueme en 
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+          <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>

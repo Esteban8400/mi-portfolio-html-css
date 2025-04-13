@@ -1,0 +1,223 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación */
+nav {
+  background-color: #343a40;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffc107;
+}
+
+/* Sección general */
+section {
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Sección "Sobre mí" */
+#sobre-mi {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+#sobre-mi img {
+  max-width: 200px;
+  border-radius: 50%;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sobre-mi img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#sobre-mi p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  max-width: 600px;
+  margin: 1rem auto;
+}
+
+/* Filas para contenido */
+.fila {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Títulos de secciones */
+.titulo {
+  flex: 1;
+  font-size: 2rem;
+  color: #007bff;
+  text-align: left;
+}
+
+/* Listado de habilidades */
+.habilidades {
+  flex: 2;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.habilidades li {
+  background-color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Contenedor y estilo de proyectos */
+.proyectos-contenedor {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+#tienda-online,
+#programa-csharp {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+  min-height: 500px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#tienda-online img,
+#programa-csharp img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Formulario de Contacto */
+#contacto form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+#contacto input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 40px;
+}
+
+#contacto textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  height: 80px;
+  resize: none;
+}
+
+#contacto button {
+  flex: 1;
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 80px;
+}
+
+#contacto button:hover {
+  background-color: #0056b3;
+}
+
+/* Sección de Películas */
+.contenedor-peliculas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.pelicula {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.pelicula img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #212529;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+}
