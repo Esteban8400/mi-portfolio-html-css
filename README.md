@@ -43,4 +43,7 @@ Este Trabajo Práctico consiste en el desarrollo de un portafolio personal utili
 
 ## URL de GitHub Pages
 
-[https://tu-nombre-de-usuario.github.io/tu-repositorio/](https://github.com/Esteban8400/mi-portfolio-html-css.git)
+[https://tu-nombre-de-usuario.github.io/tu-repositorio/][def]
+
+
+[def]: https://github.com/Esteban8400/mi-portfolio-html-css.git
